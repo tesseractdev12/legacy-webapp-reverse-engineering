@@ -24,11 +24,8 @@ This will execute the script, which fetches the user data and writes the results
 
 ## Video Demonstration
 
-For a visual demonstration of the script in action, please refer to the following link: [Loom Video](<insert-loom-video-link-here>).
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
+For a visual demonstration of the script in action, please refer to the following link: [Loom Video]
+( https://www.loom.com/share/bda6eb79a5ea496ab46a31f499c95d7f?sid=b1b585dd-b57e-4c3c-af1c-3c9e9f77d706 ).
 
 ## License
 
