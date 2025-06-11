@@ -1,7 +1,27 @@
+import path from "path";
 import fetch from "node-fetch";
 import fs from "fs";
 
 const LOGIN_URL = "https://challenge.sunvoy.com/login";
+const AUTH_FILE = path.resolve(".auth.json");
+
+export function getSavedCookie(): string | null {
+  if (!fs.existsSync(AUTH_FILE)) return null;
+
+  const content = fs.readFileSync(AUTH_FILE, "utf-8").trim();
+  if (!content) return null;
+
+  try {
+    const { cookie } = JSON.parse(content);
+    return cookie ?? null;
+  } catch (err) {
+    console.error("Invalid JSON in auth file:", err);
+    return null;
+  }
+}
+
+
+
 
 export async function login() {
   // STEP 1: GET login page
